@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-demo.model_master,model.master,demo model_master,demo_group,1,0,0,0
+access_model_master, access.model.master,model_model_master,demo.demo_group,1,1,1,0

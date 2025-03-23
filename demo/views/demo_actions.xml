@@ -17,7 +17,7 @@
 
         <!-- act_windows: "abrir janela"-->
 
-        <record id="demo_form" model="ir.actions.act_window">
+        <record id="action_master_list" model="ir.actions.act_window">
             <field name="name">Master</field>
             <field name="res_model">model.master</field>
             <field name="view_mode">tree,kanban,form</field>
