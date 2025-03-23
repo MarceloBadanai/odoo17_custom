@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    
+    <menuitem name="Demo"
+      id="demo_menuitem"
+      sequence="1000"
+      groups="demo_group">
+      <menuitem id="menu_master1" name="Master" action="demo_form"
+        sequence="1" />
+    </menuitem>
+
+    
+  </data>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_master_list" model="ir.ui.view">
+            <field name="name">demo.master.list</field>
+            <field name="model">model.master</field>
+            <field name="arch" type="xml">
+                <tree editable="top" create="1" delete="1" multi_edit="1" string="Master"
+                    open_form_view="True">
+                    <field name="compute_field" column_invisible="True" />
+                    <field name="int_field" />
+                    <field name="float_field" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- act_windows: "abrir janela"-->
+
+        <record id="demo_form" model="ir.actions.act_window">
+            <field name="name">Master</field>
+            <field name="res_model">model.master</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_master_list" />
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Help-title
+                </p>
+                <p>
+                    Help line 1
+                    Help line 1
+                </p>
+            </field>
+        </record>
+
+
+    </data>
+
+</odoo>
+
+        
