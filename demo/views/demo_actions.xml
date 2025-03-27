@@ -17,7 +17,7 @@
         <!-- act_windows: "abrir janela"-->
 
         <record id="action_device_list" model="ir.actions.act_window">
-            <field name="name">action_device.list</field>
+            <field name="name">Device's</field>
             <field name="res_model">demo.device</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_device_list" />            

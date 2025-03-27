@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="report_device_action" model="ir.actions.report">
+            <field name="name">Device's reports</field>
+            <field name="model">demo.device</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">device_report</field>
+            <field name="report_file">demo.report_device</field>
+            <field name="print_report_name">device report</field>
+            <!--<field name="attachment">report.pdf</field>-->
+            
+            <field name="binding_model_id" ref="model_demo_device" ></field>
+            <field name="binding_type">report</field>
+
+
+            <field name="groups_id" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"></field>
+        </record>
+    </data>
+</odoo>

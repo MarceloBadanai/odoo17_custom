@@ -2,12 +2,12 @@
 <odoo>
   <data>
 
-    <menuitem name="device"
-      id = "demo_menuitem"
+    <menuitem name="Demo (*)"
+      id = "demo_main"
       sequence = "1001"
       groups = "demo_group">
       
-      <menuitem id="menu_master1" 
+      <menuitem id="demo_device_list" 
         name="List" 
         action="action_device_list"
         sequence="1" />      
