@@ -4,6 +4,18 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "run",
+            "command": "/bin/bash",
+            "type": "process",
+            "args": [
+                "run.sh",
+            ],
+            "options": {
+              "cwd": "/usr/lib/python3/dist-packages/odoo"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "stop",
             "command": "/bin/bash",
             "type": "process",

@@ -1,6 +1,6 @@
 {
     'name' : 'demo',
-    'version' : '1.0',
+    'version' : '1.1',
     'description' : 'demo - description',
     'summary' : 'demo - summary :)',
     'author' : 'demo - author - badarov',
