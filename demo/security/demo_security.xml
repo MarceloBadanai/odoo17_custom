@@ -12,23 +12,9 @@
       <field name="name">Demo group</field>
       <field name="category_id" ref="demo_category_group"></field>
 
-      <!--define
-    usuários padrão-->
+      <!--define usuários padrão-->
       <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]" />
     </record>
-
-    <!--
-
-  <record id="group_demo_master" model="ir.rule">
-    <field name="name">Acesso ao master</field>
-    <field name="model_id" ref="model_master" />
-    <field name="groups" eval="[(4, ref('demo_group'))]" />
-    <field name="domain_force">[(1, '=', 1)]</field>
-    <field name="perm_write" eval="true" />
-    <field name="perm_create" eval="true" />
-    <field name="perm_unlink" eval="true" />
-  </record>
--->
   </data>
   
 </odoo>

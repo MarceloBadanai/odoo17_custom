@@ -2,35 +2,25 @@
 <odoo>
     <data>
 
-        <record id="view_master_list" model="ir.ui.view">
-            <field name="name">demo.master.list</field>
-            <field name="model">model.master</field>
+        <record id="view_device_list" model="ir.ui.view">
+            <field name="name">demo.device.list</field>
+            <field name="model">demo.device</field>
             <field name="arch" type="xml">
-                <tree editable="top" create="1" delete="1" multi_edit="1" string="Master"
+                <tree editable="top" create="1" delete="1" multi_edit="1" string="Dispositivos"
                     open_form_view="True">
-                    <field name="compute_field" column_invisible="True" />
-                    <field name="int_field" />
-                    <field name="float_field" />
+                    <field name="nome" />
+                    <field name="ip" />
                 </tree>
             </field>
         </record>
 
         <!-- act_windows: "abrir janela"-->
 
-        <record id="action_master_list" model="ir.actions.act_window">
-            <field name="name">Master</field>
-            <field name="res_model">model.master</field>
-            <field name="view_mode">tree,kanban,form</field>
-            <field name="view_id" ref="view_master_list" />
-            <field name="help" type="html">
-                <p class="o_view_nocontent_smiling_face">
-                    Help-title
-                </p>
-                <p>
-                    Help line 1
-                    Help line 1
-                </p>
-            </field>
+        <record id="action_device_list" model="ir.actions.act_window">
+            <field name="name">action_device.list</field>
+            <field name="res_model">demo.device</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_device_list" />            
         </record>
 
 

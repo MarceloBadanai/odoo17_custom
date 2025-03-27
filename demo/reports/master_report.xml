@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="master_report_action" model="ir.actions.report">
+            <field name="name">Master Report Action</field>
+            <field name="model">model.master</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">demo.report_master</field>
+            <field name="report_file">demo.report_master</field>
+            <field name="print_report_name">master report</field>
+            <!--<field name="attachment">report.pdf</field>-->
+            
+            <field name="binding_model_id" ref="model_model_master" ></field>
+            <field name="binding_type">report</field>
+
+
+            <field name="groups_id" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"></field>
+            
+            
+        </record>
+    </data>
+</odoo>

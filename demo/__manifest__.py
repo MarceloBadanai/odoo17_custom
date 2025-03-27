@@ -7,10 +7,6 @@
 
     'category': 'Demo/Demo',
    
-    #"depends" : [
-    #    "sale",
-    #    "account"
-    #],
 
     "data" : [
         "views/demo_actions.xml",
@@ -19,7 +15,5 @@
         "security/ir.model.access.csv"        
     ],
     
-    # para definir se o módulo é um application 
-    # necessário dar upgrade no aplicativo
     'application' : 'true'
 }

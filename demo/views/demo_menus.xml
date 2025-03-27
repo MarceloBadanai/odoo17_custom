@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
   <data>
-    <menuitem name="Master"
-      id="demo_menuitem"
-      sequence="1001"
-      groups="demo_group">
-      <menuitem id="menu_master1" name="List" action="action_master_list"
-        sequence="1" />
-      <menuitem id="menu_master2" name="Form" action="action_master_list"
-        sequence="2" />
+
+    <menuitem name="device"
+      id = "demo_menuitem"
+      sequence = "1001"
+      groups = "demo_group">
+      
+      <menuitem id="menu_master1" 
+        name="List" 
+        action="action_device_list"
+        sequence="1" />      
     </menuitem>
+
   </data>
-
-
 </odoo>
