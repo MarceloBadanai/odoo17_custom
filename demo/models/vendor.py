@@ -6,12 +6,12 @@ class Vendor(models.Model):
 
     razaoSocial = fields.Char(
         string="Nome",        
-        size=30
+        size=130
     )
 
     cidade = fields.Char(
         string="Cidade",        
-        size=20
+        size=120
     )
     
     device_id = fields.Many2one("demo.device", 
