@@ -25,12 +25,12 @@
                                 <table class="table table-sm table-borderless">
                                     <thead>
                                         <tr>
-                                            <th class="text-start">Nome *</th>
+                                            <th class="text-start">Nome ***</th>
                                             <th class="text-end">Cidade</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <t t-foreach="vendor_ids" t-as= "vendor">
+                                        <t t-foreach="vendors_ids" t-as= "vendor">
                                             <tr>
                                                 <td class="text-start">
                                                     <span>*</span>
