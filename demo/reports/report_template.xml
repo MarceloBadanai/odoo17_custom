@@ -25,11 +25,23 @@
                                 <table class="table table-sm table-borderless">
                                     <thead>
                                         <tr>
-                                            <th>Nome</th>
-                                            <th>Cidade</th>
+                                            <th class="text-start">Nome</th>
+                                            <th class="text-end">Cidade</th>
                                         </tr>
                                     </thead>
-                                    
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-start">
+                                                <span >Fornecedor 1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end">
+                                                <span>Teresina</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
                                     <!--
                                     <tbody>
                                         <t t-foreach="vendorIds" t-as= "vendor">
