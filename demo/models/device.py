@@ -10,8 +10,13 @@ class Master(models.Model):
     )
 
     ip = fields.Char(
-        string="Nome",        
+        string="IP",        
         size=20
     )
+
+    vendors_ids = fields.One2many("demo.vendor", "device_id",
+        string="Fornecedore(s)"
+    )
+
 
     

@@ -2,7 +2,7 @@
 <odoo>
     <data>
 
-        <record id="view_device_list" model="ir.ui.view">
+        <record id="demo_device_list" model="ir.ui.view">
             <field name="name">demo.device.list</field>
             <field name="model">demo.device</field>
             <field name="arch" type="xml">
@@ -14,13 +14,45 @@
             </field>
         </record>
 
+    
+        <record id="demo_device_form" model="ir.ui.view">
+            <field name="name">demo.device.form</field>
+            <field name="model">demo.device</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nome">Nome</field>
+                        </group>
+                        <group>
+                            <field name="vendors_ids">Fornecedores</field>
+                        </group>
+                    </sheet>
+                </form>                    
+            </field>
+        </record>
+        
+
+        <record id="demo_vendor_list" model="ir.ui.view">
+            <field name="name">demo.vendor.list</field>
+            <field name="model">demo.vendor</field>
+            <field name="arch" type="xml">
+                <tree editable="top" create="1" delete="1" multi_edit="1" string="Fornecedores"
+                    open_form_view="True">
+                    <field name="razaoSocial" />
+                    <field name="cidade" />
+                </tree>
+            </field>
+        </record>
+
+
         <!-- act_windows: "abrir janela"-->
 
         <record id="action_device_list" model="ir.actions.act_window">
             <field name="name">Device's</field>
             <field name="res_model">demo.device</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_device_list" />            
+            <field name="view_id" ref="demo_device_list" />
         </record>
 
 

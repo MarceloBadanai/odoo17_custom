@@ -7,10 +7,12 @@
       sequence = "1001"
       groups = "demo_group">
       
-      <menuitem id="demo_device_list" 
+      
+      <menuitem id="demo_device_list_2" 
         name="List" 
         action="action_device_list"
-        sequence="1" />      
+        sequence="1" />
+
     </menuitem>
 
   </data>

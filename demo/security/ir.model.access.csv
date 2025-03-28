@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_model_device, access.demo.master,model_demo_device,demo.demo_group,1,1,1,1
+access_model_vendor, access.demo.vendor,model_demo_vendor,demo.demo_group,1,1,1,1
