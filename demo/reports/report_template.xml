@@ -30,7 +30,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <t t-foreach="vendors_ids" t-as= "vendor">
+                                        <t t-foreach="doc.vendors_ids" t-as= "vendor">
                                             <tr>
                                                 <td class="text-start">
                                                     <span>*</span>
